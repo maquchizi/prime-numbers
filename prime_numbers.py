@@ -26,7 +26,7 @@ def is_prime(number):
             For speed, only test till sqrt of number
             If no match found in this first partion, there will be none in the next partition till number
         '''
-        for count in range(2, int(sqrt(number))):
-            if number % count == 0:
+        for current_number in range(2, int(sqrt(number))):
+            if number % current_number == 0:
                 return False
             return True
